@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:layout_marginStart="10pt">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/password_length_description"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <Spinner
+                android:id="@+id/inputLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/symbols_description"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/symbol_included"
+                android:checked="true"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/numbers_description"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/number_included"
+                android:checked="true"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/lowercase_included"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/lowercase_included"
+                android:checked="true"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/uppercase_included"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/uppercase_included"
+                android:checked="true"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/similar_excluded"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/similar_excluded" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5pt"
+                android:text="@string/ambiguous_excluded"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <CheckBox
+                android:id="@+id/ambiguous_excluded"
+                android:checked="true" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:text="@string/generateButton" />
+    <TextView
+        android:id="@+id/generatedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="10pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginBottom="10pt"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/copyButton"
+        tools:ignore="ButtonStyle" />
+</LinearLayout>

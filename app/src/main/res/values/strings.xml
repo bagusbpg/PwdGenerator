@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PwdGenerator</string>
+    <string name="password_length_description">Password length</string>
+    <string name="symbols_description">Include special\ncharacters</string>
+    <string name="numbers_description">Include numbers</string>
+    <string name="lowercase_included">Include lowercase\ncharacters</string>
+    <string name="uppercase_included">Include uppercase\ncharacters</string>
+    <string name="similar_excluded">Exclude similar\ncharacters</string>
+    <string name="ambiguous_excluded">Exclude ambiguous\ncharacters</string>
+    <string name="generateButton">Generate</string>
+    <string name="copyButton">Copy</string>
+    <string name="about">About</string>
+    <string name="symbols">Special Characters</string>
+    <string name="symbols_long_description">Following characters are included when "Include special characters" option is selected : ~ \` ! @ # $ % ^ &amp; * ( ) - _ + = { [ ] } | \ : ; \" \' &lt; , . &gt; ? /</string>
+    <string name="numbers">Numbers</string>
+    <string name="numbers_long_description">Following characters are included when "Include numbers" option is selected : 1 2 3 4 5 6 7 8 9 0</string>
+    <string name="lowercase">Lowercase Characters</string>
+    <string name="lowercase_long_description">Following characters are included when "Include lowercase characters" option is selected : a b c d e f g h i j k l m n o p q r s t u v w x y z</string>
+    <string name="uppercase">Uppercase Characters</string>
+    <string name="uppercase_long_description">Following characters are included when "Include uppercase characters" option is selected : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</string>
+    <string name="similar">Similar Characters</string>
+    <string name="similar_long_description">Following characters are excluded when "Exclude similar characters" option is selected : \` 1 0 I Q l</string>
+    <string name="ambiguous">Ambiguous Characters</string>
+    <string name="ambiguous_long_description">Following characters are excluded when "Exclude ambiguous characters" option is selected : { } [ ] ( ) / \\ \" \' \` ~ , ; : . &lt; &gt;</string>
+    <string name="clear">CLEAR</string>
+</resources>
