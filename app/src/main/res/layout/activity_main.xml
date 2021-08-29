@@ -9,6 +9,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_marginTop="10pt"
         android:layout_marginStart="10pt">
         <TableRow>
@@ -109,8 +110,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10pt"
-        android:layout_marginLeft="140dp"
-        android:layout_marginRight="140dp"
         android:text="@string/generateButton" />
     <TextView
         android:id="@+id/generatedPassword"
