@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         val symbol = "~`!@#\$%^&*()-_+={[]}|\\:;\"'<,.>?/"
-        val digit: CharRange = ('1'..'0')
+        val digit: CharRange = ('0'..'9')
         val lowercase: CharRange = ('a'..'z' )
         val uppercase: CharRange = ('A'..'Z')
         val similar = "`10IQl"
