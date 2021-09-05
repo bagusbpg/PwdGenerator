@@ -19,6 +19,10 @@ import kotlin.streams.asSequence
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityMainBinding
 
+    companion object {
+        private const val STATE_RESULT = "state_result"
+    }
+
     private fun generator(charPool: List<Any>, length: Int): String {
         val random = SecureRandom()
         val calendar = Calendar.getInstance().timeInMillis
@@ -60,6 +64,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 TODO("Not yet implemented")
             }
         }
+
+        if (savedInstanceState != null) {
+            val result = savedInstanceState.getString(STATE_RESULT)
+            binding.generatedPassword.text = result
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -71,6 +80,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val about = Intent(this@MainActivity, AboutMe::class.java)
         startActivity(about)
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(STATE_RESULT, binding.generatedPassword.text.toString())
     }
 
     override fun onClick(v: View?) {
